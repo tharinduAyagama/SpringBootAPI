@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	i lov u
+	i love u ${n}
 </body>
 </html>
