@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
- 	this is customer profile
+ 	this is customer profile ${name}
 </body>
 </html>
