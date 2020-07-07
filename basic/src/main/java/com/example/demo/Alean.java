@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -8,6 +10,9 @@ import org.springframework.stereotype.Component;
 public class Alean {
 	private int aID;
 	private String name;
+	@Autowired
+	@Qualifier("lap")
+	private Laptop lap;
 	
 	
 	public Alean() {
@@ -26,9 +31,16 @@ public class Alean {
 	public void setName(String name) {
 		this.name = name;
 	}
+	public Laptop getLap() {
+		return lap;
+	}
+	public void setLap(Laptop lap) {
+		this.lap = lap;
+	}
 	
 	public void hello() {
-		System.out.println("Hello");;
+		System.out.println("Hello");
+		lap.sayHeloo();
 	}
 	
 }

@@ -11,10 +11,11 @@ public class BasicApplication {
 		ApplicationContext contex = SpringApplication.run(BasicApplication.class, args);
 		 
 		 //normal class making in java
-		 Alean a = new Alean();
-		 a.hello();
+//		 Alean a = new Alean();
+//		 a.hello();
 		 
 		 //in spring 
 		 Alean a1 = contex.getBean(Alean.class);
+		 a1.hello();
 	}
 }
