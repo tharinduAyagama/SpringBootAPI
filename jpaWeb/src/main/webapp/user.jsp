@@ -11,6 +11,11 @@
 		<input type="text" name="uid" placeholder="id">
 		<input type="text" name="uname" placeholder="name">
 		<button type="submit">submit</button>
+	</form><br>
+	
+	<form action="showUsers">
+		<input type="text" name="uid" placeholder="id">
+		<button>userlist</button>
 	</form>
 </body>
 </html>
